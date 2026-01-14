@@ -21,3 +21,7 @@ A SOC analyst can use this script to quickly identify suspicious IPs in system l
 - Log analysis
 - Basic Python scripting
 - Security monitoring concepts
+  
+md 
+I chose to flag an IP as suspicious if it has 3 or more failed login attempts,
+including both "Failed password" and "Invalid user" events, because repeated failures may indicate brute-force attacks.
