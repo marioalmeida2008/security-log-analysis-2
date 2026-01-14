@@ -18,3 +18,8 @@ print("\nSuspicious IPs:")
 for ip, count in counter.items():
 if count >= 2:
 print(f"{ip} (possible brute force)")
+
+if "Invalid user" in line:
+  ip= line.split()[-1]
+  failed_ips.append(ip)
+  
