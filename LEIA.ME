@@ -1,0 +1,35 @@
+Análise-de-log de segurança-2
+
+Este projeto foi criado como parte do Certificado de Segurança Cibernética do Google.
+
+Objetivo
+
+Analise os registros de autenticação para identificar tentativas de login com falha e endereços IP suspeitos.
+
+Ferramentas
+
+Píton
+
+Exemplos de registros de autenticação
+
+O que o roteiro faz
+
+Lê um arquivo de registro de autenticação
+
+Detecta tentativas de login com falha
+
+Identifica possível comportamento de força bruta
+
+Exemplo de caso de uso
+
+Um analista de SOC pode usar esse script para identificar rapidamente IPs suspeitos nos registros do sistema.
+
+Habilidades demonstradas
+
+Análise de registro
+
+Scripts Python básicos
+
+Conceitos de monitoramento de segurança
+
+Md Eu escolhi sinalizar um IP como suspeito se ele tiver 3 ou mais tentativas de login com falha, incluindo eventos de "Senha falha" e "Usuário inválido", porque falhas repetidas podem indicar ataques de força bruta.
